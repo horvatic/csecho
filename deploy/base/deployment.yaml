@@ -10,6 +10,10 @@ spec:
     matchLabels:
       app: csecho
   template:
+    metadata:
+      name: csecho
+      labels:
+        app: csecho
     spec:
       containers:
       - name: csecho
