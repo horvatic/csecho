@@ -5,7 +5,7 @@ namespace Csecho.Web.Controllers
 {
     public class EchoController : ControllerBase
     {
-	[HttpGet("/{echo}")]
+	[HttpGet("/{namespace}/{service}/{echo}")]
         public IActionResult Echo(string echo)
         {
             return Ok(echo);

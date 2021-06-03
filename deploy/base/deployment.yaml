@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: csecho
+  labels:
+    app: csecho
+spec:
+  revisionHistoryLimit : 1
+  selector:
+    matchLabels:
+      app: csecho
+  template:
+    spec:
+      containers:
+      - name: csecho
+        image: horvatic/csecho:${TAG}
+        ports:
+          - containerPort: 80
+            name: "csecho-http"
