@@ -1,2 +1,2 @@
-# csecho
-Simple C# echo server deployable to kubernetes
+# Csecho
+Simple C# echo server deployable to kubernetes, and demo sonarcloud
